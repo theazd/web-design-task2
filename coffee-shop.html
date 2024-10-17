@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee Shop</title>
+
+<style>
+
+/* 
+CSS Reset - targets and resets ALL elements on the page
+*/
+
+*{
+    margin : 0;
+    padding : 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+}
+
+
+header {
+background-color: #6B4226;
+color : #ffffff;
+padding : 20px;
+text-align: center;
+}
+
+nav{
+background-color: #f4f4f4;
+padding : 15px;
+display : flex;
+justify-content: space-around;
+}
+
+/* 
+Targeting HTML hierarchy requires that we separate tags with spaces
+*/
+
+nav a{
+    color :#6B4226;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    margin: 20px;
+    padding:20px;
+}
+
+ul{
+    padding-left: 20px;
+}
+
+/*
+Classes are targeted using a dot */
+
+.box {
+    border-width: 1px;
+    border-color: #ccc;
+    border-style: solid;
+    padding: 20px;
+    margin-bottom: 20px; 
+}
+
+.highlight{
+    background-color : #fff4e6;
+    border-color: #d4b49b;
+}
+
+</style>
+
+
+</head>
+<body>
+
+    <!--    Website Header -->
+    <header>
+        <h1> Welcome to our Coffee Shop </h1>
+    </header>
+
+<!-- Website Navigation -->
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Menu</a>
+    <a href="#">About Us</a>
+    <a href="#">Contact</a>
+</nav>
+
+<!-- Website Content-->
+
+<main>
+
+    <!-- Welcome Box -->
+    <div class="box highlight">
+<h2> Our Story </h2>
+<p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis molestiae vel qui dolorum tempora. Eligendi repellat neque quos eos quisquam. Repudiandae reiciendis quos hic quae?</p>
+    </div>
+
+<!-- Featured Items -->
+<div class="box">
+    <h2> Featured Items</h2>
+    <ul>
+        <li> Espresso - &euro; 1.50 </li>
+        <li> Cappucino - &euro; 3.50 </li>
+        <li> Americano - &euro; 2.00 </li>
+        <li> Macchiato - &euro; 2.30</li>
+    </ul>
+</div>
+
+<!-- Location Box -->
+<div class="box">
+<h2> Location </h2>
+<p> Door 69, Haha Good Luck Str, Mosta </p>
+</div>
+
+</main>
+
+
+
+
+</body>
+</html>
