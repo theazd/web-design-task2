@@ -1,0 +1,100 @@
+/********************* CSS RESET *********************/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/********************* GENERIC ELEMENTS *********************/
+
+body {
+    background-color: #fafafa;
+    font-family: 'JetBrains Mono', monospace;
+    line-height: 1.6;
+
+    min-height: 200vh;
+}
+
+/********************* INTRO *********************/
+
+.intro {
+    background-image: url(images/leaves.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    width: 100vw; /*viewport width */
+    height: 100vh; /* viewport height */
+
+    display: flex;
+}
+
+.intro-container {
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.5);
+    /* properties: X Y Size Color */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+
+    width: 25%;
+
+    text-align: center;
+    padding: 20px;
+    margin:auto;
+}
+
+.intro h1 {
+    text-transform: uppercase;
+    font-weight: normal;
+
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+
+.intro p {
+    line-height: 2;
+}
+
+/********************* INTRO *********************/
+
+.card {
+    display: block;
+
+    color: black;
+    text-decoration: none;
+}
+
+.card-image {
+    height: 500px;
+    overflow: hidden; /* crops the extra content*/
+
+}
+
+.card-image img {
+
+    display: block;
+
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+
+    transition-property: transform;
+    transition-duration: 1s;
+    transition-timing-function: ease-out;
+
+}
+
+.card h2{
+
+    margin-top: 20px;
+    margin-bottom: 50px;
+
+    font-size: 1.2em; /* 120% of the default font size */
+}
+
+.card:hover img {
+    transform: scale(1.2) rotate(360deg);
+
+    transition-duration: 10s;
+    transition-timing-function: linear;
+
+}
