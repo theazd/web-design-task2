@@ -24,6 +24,8 @@ body {
     background-attachment: fixed;
 
     width: 100vw; /*viewport width */
+    width: auto; /*replaces vw and fixes scrolling*/
+    
     height: 100vh; /* viewport height */
 
     display: flex;
@@ -97,4 +99,72 @@ body {
     transition-duration: 10s;
     transition-timing-function: linear;
 
+}
+
+
+/********************* CONTAINER *********************/
+
+.container {
+    
+
+    max-width : 1280px;
+    margin: auto;
+
+}
+
+/********************* GRID LAYOUT *********************/
+
+.row {
+
+    display: flex;
+    flex-wrap: wrap;
+
+    gap:50px;
+
+}
+
+.two-columns .card {
+    width : calc(( 100% - 50px ) / 2 );
+}
+
+.three-columns .card {
+    width : calc(( 100% - 100px ) / 3 );
+}
+
+/********************* WEBSITE CONTENT *********************/
+
+.main-content {
+    margin-top: 100px;
+}
+
+.vertical-title {
+    font-size: 0.9em ;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: normal;
+
+    background-color: darkviolet;
+    transform-origin: 0 0;
+    transform: rotate(90deg) translateY(5px);
+
+    position: absolute;
+}
+
+/********************* FOOTER *********************/
+
+footer {
+    
+    background-color:#e7e7e7;
+    padding: 20px;
+    display: flex;
+    
+}
+
+footer p {
+    
+    font-size:x-small;
+    width : calc(( 100% - 60px ) / 3 );
+    margin-top: 20px;
+    margin-bottom: 70px;
+    display: flex;
 }
