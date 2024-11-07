@@ -29,6 +29,10 @@ body {
     height: 100vh; /* viewport height */
 
     display: flex;
+
+    /* helps put the intro screan in front of the navbar */
+    position: relative;
+    z-index: 1010;
 }
 
 .intro-container {
@@ -152,19 +156,98 @@ body {
 
 /********************* FOOTER *********************/
 
-footer {
+.website-footer {
     
     background-color:#e7e7e7;
-    padding: 20px;
-    display: flex;
+    padding: 50px;
     
 }
 
-footer p {
+.website-footer p {
     
-    font-size:x-small;
     width : calc(( 100% - 60px ) / 3 );
-    margin-top: 20px;
-    margin-bottom: 70px;
+}
+
+.website-footer .container {
+display: flex;
+flex-wrap: wrap;
+}
+
+.website-footer .summary {
+    width: 33%;
+}
+
+.website-footer .footer-links {
+    margin-left: auto;
+
+    columns: 2;
+    gap: 50px;
+}
+
+.website-footer .footer-item {
+    margin-bottom: 10px;
+}
+
+.website-footer .footer-link {
+    color:#000;
+    text-decoration: none;
+}
+
+.website-footer .copyright {
+    width: 100%;
+    margin-top: 50px;
+    text-align: right;
+}
+
+/********************* NAVBAR *********************/
+
+.navbar {
+    background-color: #fafafa;
+    border-color: darkviolet;
+    border-style: solid;
+    border-width: 0;
+
+    /* overrides the cleared borders */
+
+    border-bottom-width: 1px;
+
+    position:fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+
+    z-index: 1000;
+}
+
+.navbar .container {
+display: flex;
+}
+
+.navbar a {
+    /*this will ass paddings to the elements later */
+    display: block;
+    color:#000;
+    text-decoration:none;
+}
+
+.navbar-nav {
+    list-style: none;
     display: flex;
+    margin-left: auto;
+}
+
+.nav-link {
+    /**/
+    padding: 30px 20px;
+}
+
+.navbar-brand {
+    font-family: 'Courier New', Courier, monospace; 
+
+    /* scale by 150% of the original font size*/
+
+    font-size: 1.5em;
+    font-weight: bold;
+
+    align-content: center;
 }
