@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        
+.oval{
+    height: 50px;
+    width: 100px;
+    background-color:#4934be;
+    border-radius: 50%;
+}
+
+.triangle {
+	width: 0;
+	height: 0;
+	border-left: 25px solid transparent;
+	border-right: 25px solid transparent;
+	border-bottom: 50px solid #4934be;
+}
+
+.circle {
+  height: 10px;
+  width: 10px;
+  background-color: #f800ec;
+  border-radius: 50%;
+}
+
+.oval-2{
+    height: 40px;
+    width: 15px;
+  background-color: #f800ec;
+    border-radius: 50%;
+}
+
+
+.cat {
+    position: relative;
+}
+
+.cat .face-top {
+    position: absolute;
+    top: 25px;
+}
+
+.cat .left-ear {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cat .right-ear {
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.cat .left-eye {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.cat .right-eye {
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+.cat .tongue {
+    position: absolute;
+    left: 50px;
+    top: 0;
+}
+
+
+
+    </style>
+</head>
+<body>
+    <div class="cat">
+        <div class="oval face-top"></div>
+        <div class="triangle left-ear"></div>
+        <div class="triangle right-ear"></div>
+        <div class="circle left-eye"></div>
+        <div class="circle right-eye"></div>
+        <div class="oval-2 tongue"></div>
+
+    </div>
+</body>
+</html>
+
+
+

@@ -1,0 +1,198 @@
+body {
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.service {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.service h3 {
+    font-size: 1.5em;
+    color: #333
+}
+
+.service p {
+    font-size: 1em;
+    color: #666
+}
+
+.portfolio-item {
+    width: 30%;
+    float: left;
+    margin-right: 3.333%;
+}
+
+.portfolio-item:nth-child(3n) {
+    margin-right: 0;
+}
+
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+}
+
+blockquote {
+    border-left: 5px solid #ccc;
+    padding-left: 15px;
+    font-style: italic;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input, form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    clear: both;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+@media (max-width: 768px) {
+    nav ul li {
+        display: block;
+        margin-right: 0;
+    }
+
+    .portfolio-item {
+        width: 100%;
+        float: none;
+        margin-right: 0;
+    }
+
+    form {
+        width: 100%
+    }
+}
+
+.invalid-selector {
+    background-color: #fff;
+    font-size: 16px
+}
+
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.intro-image img {
+    max-width: 100%;
+    height: auto
+}
+
+.team-member {
+    margin-bottom: 20px;
+}
+
+.team-member h3 {
+    font-size: 1.5em;
+    color: #333
+}
+
+.team-member p {
+    font-size: 1em;
+    color: #666
+}
+
+.social-media {
+    margin-top: 20px;
+}
+
+.social-media ul {
+    list-style-type: none;
+    padding: 0
+}
+
+.social-media ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social-media ul li a {
+    color: #fff;
+    text-decoration: none
+}
+
+.blog article {
+    margin-bottom: 20px;
+}
+
+.blog article h3 {
+    font-size: 1.5em;
+    color: #333
+}
+
+.blog article p {
+    font-size: 1em;
+    color: #666
+}
