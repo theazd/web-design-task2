@@ -67,9 +67,28 @@
                 border-radius: 50%;
             }
             
+            
         }
         
-        
+    
+
+        @keyframes dot-3 {
+            0% {
+              opacity : 0;
+            }
+            
+            70% {
+                opacity : 0.5;
+            }
+            
+            
+            100% {
+                opacity : 0;
+            }
+
+        }
+
+
         h1 {
             font-family:monospace;
             font-size:400%;
@@ -206,9 +225,28 @@
         h1 span:nth-child(1) {
             color: red;
             animation-name: dot-1;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
             opacity: 0.5;
         }
-    </style>
+
+        h1 span:nth-child(2) {
+            color: blue;
+            animation-name: dot-2;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            opacity: 0.5;
+        }
+
+        h1 span:nth-child(3) {
+            color: #ff00ea;
+            animation-name: dot-3;
+            animation-duration: 3s;
+            animation-iteration-count: infinite;
+            opacity: 0.5;
+        }
+
+</style>
 </head>
 <body>
     <div class="fullscreen">
