@@ -5,39 +5,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css" class="css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Krona+One&display=swap" rel="stylesheet">
+    
 </head>
 <body>
     
- <!-- Website Navigation -->
-
- <nav class="navbar">
-    <div class="container">
-
+    <!-- Website Navigation -->
     
+    <nav class="navbar">
+        <div class="container">
+            
+            
+            
+            <ul class="nav-menu">
+                
+                <li class="nav-item">
+                    <a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item">
+                        <a href="aboutme.html" class="nav-link">About Me</a></li>
+                        <li class="nav-item">
+                            <a href="portfolio.html" class="nav-link">Portfolio</a></li>
+                            <li class="nav-item">
+                                <a href="contact.html" class="nav-link">Contact</a></li>
+                            </ul>
+                            
+                        </div>
+                    </nav>
+                    
+                    
+                    <h2> contact me ! !</h2>
 
-        <ul class="nav-menu">
-
-            <li class="nav-item">
-                <a href="index.html" class="nav-link">Home</a></li>
-            <li class="nav-item">
-                <a href="aboutme.html" class="nav-link">About Me</a></li>
-            <li class="nav-item">
-                <a href="portfolio.html" class="nav-link">Portfolio</a></li>
-            <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a></li>
-        </ul>
-    
-    </div>
-</nav>
-
-<form action="mailto:your-email@example.com" method="GET">
-    <input type="text" name="subject" placeholder="Subject" required><br><br>
-    <textarea name="body" placeholder="Your message" rows="5" required></textarea><br><br>
-    <button type="submit">Send</button>
-  </form>
-  
-  </form>
-
-
-</body>
-</html>
+                    <p> reach out to me here :)</p>
+                    
+                    <form action="mailto:your-email@example.com" method="GET">
+                        <div class="form-element">
+                            <label for="name">Name:</label>
+                            <input type="text" name="name" id="name" placeholder="enter your name !" required>
+                        </div>
+                        
+                        <div class="form-element">
+                            <label for="email">Email Address:</label>
+                            <input type="email" name="email" id="email" placeholder="me@example.com" required>
+                        </div>
+                        
+                        <div class="form-element">
+                            <label for="subject">Subject:</label>
+                            <input type="text" name="subject" id="subject" placeholder="topic" required>
+                        </div>
+                        
+                        <div class="form-element">
+                            <label for="body">Message:</label>
+                            <textarea name="body" id="body" rows="5" placeholder="hi there  :D" required></textarea>
+                        </div>
+                        
+                        <div class="form-element">
+                            <button type="submit">Send</button>
+                            <button type="reset">Reset</button>
+                        </div>
+                    </form>
+                    
+                    
+                </body>
+                </html>

@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: sans-serif, monospace
+    font-family: "Krona One", monospace;
 }
 
 body {
@@ -38,6 +38,7 @@ nav {
 
 .nav-menu li a {
     color: #E700AD;
+    font-family: "Krona One", monospace;
     text-decoration: none;
     font-weight: bold;
     display: flex;
@@ -53,8 +54,8 @@ nav {
     color: #E700AD;
     text-decoration: none;
     font-weight: bold;
-    font-size: 200%;
-    text-shadow: 1px 1px 2px #000;
+    font-size: 150%;
+   
     transition: transform 0.2s ease;
 }
 
@@ -78,10 +79,13 @@ nav {
     margin-bottom: 1rem;
 }
 
-.intro p {
+p {
+    font-family: "Krona One", monospace;
+    color:#FADFFF;
     font-size: 150%;
     color: #ccc;
     margin-bottom: 2rem;
+    text-align: center;
 }
 
 h2 {
@@ -89,6 +93,7 @@ h2 {
     color: #FF9FDF;
     margin-bottom: 1rem;
     text-align: center;
+    font-family: "Krona One", monospace;
 }
 
 
@@ -166,34 +171,65 @@ h2 {
 
 /********************* CONTACT *********************/
 
-.contact-form {
-    width: 100%;
-    max-width: 500px;
-    margin: 30px auto;
+/* Basic Form Styling */
+form {
+    max-width: 600px;
+    margin: 20px auto;
     padding: 20px;
-    background: #f9f9f9;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #000;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #0000001a;
+    font-family: "Krona One", monospace;
+    color: #E700AD; /* Text color */
   }
   
-  .contact-form input,
-  .contact-form textarea,
-  .contact-form button {
+  /* Form Elements */
+  .form-element {
+    margin-bottom: 15px;
+  }
+  
+  .form-element label {
+    display: block;
+    font-weight: bold;
+    color: #E700AD; /* Text color */
+  }
+  
+  .form-element input,
+  .form-element textarea {
     width: 100%;
     padding: 10px;
-    margin-bottom: 15px;
+    border: 2px solid #FF9FDF; /* Light pink border */
     border-radius: 5px;
-    border: 1px solid #ddd;
+    background-color: #222; /* Darker background to make it less bright */
     font-size: 16px;
+    color: #E700AD; /* Text color */
+    box-sizing: border-box;
+    transition: 0.3s;
   }
   
-  .contact-form button {
-    background: #007bff;
-    color: white;
+  .form-element input:focus,
+  .form-element textarea:focus {
+    border-color: #A3F100; /* Green border on focus */
+    outline: none;
+    background-color: #333; /* Darker background on focus for less contrast */
+  }
+  
+  button {
+    width: 48%;
+    padding: 12px;
+    background-color:#FF9FDF; /* Soft blue background for buttons */
+    color: #E700AD; /* Text color */
     border: none;
+    border-radius: 5px;
+    font-size: 16px;
     cursor: pointer;
+    transition: 0.3s;
+    margin-top: 10px;
+    font-family: "Krona One", monospace;
   }
   
-  .contact-form button:hover {
-    background: #0056b3;
+  button:hover {
+    background-color:#00CFFF; /* Light pink background on hover */
+    color: #000; /* Dark text on hover for contrast */
   }
+  
