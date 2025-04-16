@@ -64,20 +64,9 @@ nav {
     background-color:#00CFFF;
 }
 
-/* Home Page Styling */
-.home {
-    display: flex;
-    justify-content: center;
-    height: 80vh;
-    padding: 70px;
-    background: radial-gradient(circle at center, #222 0%, #111 100%);
-}
+/*  Page Styling */
 
-.intro h2 {
-    font-size: 500%;
-    color: #FF9FDF;
-    margin-bottom: 1rem;
-}
+
 
 p {
     font-family: "Krona One", monospace;
@@ -88,13 +77,88 @@ p {
     text-align: center;
 }
 
-h2 {
+
+h1 {
     font-size: 500%;
     color: #FF9FDF;
     margin-bottom: 1rem;
-    text-align: center;
+    margin-left: 200px;
+    text-align: left;
     font-family: "Krona One", monospace;
 }
+
+h2 {
+    font-family: "Krona One", monospace;
+    color:#FADFFF;
+    font-size: 150%;
+    margin-bottom: 200px;
+    margin-left: 200px;
+    text-align: left;
+
+}
+
+h3 {
+
+    font-family: "Krona One", monospace;
+    color:#A3F100;
+    font-size: 170%;
+    margin-bottom: 200px;
+    text-align: center;
+
+}
+
+h4{    font-family: "Krona One", monospace;
+    color:#FADFFF;
+    font-size: 150%;
+    margin-bottom: 20px;
+    margin-right: 100px;
+    text-align: right;
+
+
+}
+
+h5 {
+    font-family: "Krona One", monospace;
+    color: #FADFFF;
+    font-size: 150%;
+    text-align: justify;
+    margin-bottom: 2rem;
+    margin-right: 200px;     
+    margin-left: 100px;  
+  }
+
+
+
+img {
+    display: block;
+    margin: 0 auto;
+    margin-top : 50px;
+    margin-bottom: 100px; /* Adjust the value as needed */
+  }
+
+  .image-text-block {
+    display: flex;
+    align-items: center;
+  }
+  
+  .about-img {
+    margin-left: 600px;
+    margin-right: 30px;
+    display: block;
+  }
+  
+  
+  .highlight {
+    color: #00CFFF;
+    text-decoration: none; /* optional: remove underline */
+  }
+  
+  .highlight:hover {
+    color: #A3F100; /* optional: hover effect */
+  }
+
+
+
 
 
 /********************* GALLERY *********************/
