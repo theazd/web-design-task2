@@ -1,0 +1,145 @@
+
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif, monospace
+}
+
+body {
+    background-color: #111;
+    color: #fff;
+    line-height: 1.6;
+}
+
+/* Navigation */
+nav {
+    background-color: #A3F100;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height : 70px;
+    flex-wrap: wrap;
+}
+
+.logo {
+    font-size: 2.2rem;
+    color: #E700AD;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #000;
+}
+
+.nav-menu {
+    list-style: none;
+    display: flex;
+    gap: 80px;
+}
+
+.nav-menu li a {
+    color: #E700AD;
+    text-decoration: none;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 0 30px;
+    height: 64px
+    
+   
+}
+
+.nav-menu a {
+    color: #E700AD;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 200%;
+    text-shadow: 1px 1px 2px #000;
+    transition: transform 0.2s ease;
+}
+
+.nav-menu a:hover {
+    transform: scale(1.1);
+    background-color:#00CFFF;
+}
+
+/* Home Page Styling */
+.home {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    padding: 70px;
+    background: radial-gradient(circle at center, #222 0%, #111 100%);
+}
+
+.intro h2 {
+    font-size: 500%;
+    color: #FF9FDF;
+    margin-bottom: 1rem;
+}
+
+.intro p {
+    font-size: 150%;
+    color: #ccc;
+    margin-bottom: 2rem;
+}
+
+
+
+/********************* GALLERY *********************/
+.card {
+    display: block;
+    width: 25%;  /* Use percentage width to make it responsive */
+    margin: 20px;
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #222;
+    overflow: hidden;
+}
+
+.card-image {
+    width: 100%; /* Full width of the container */
+    min-height: 200px; /* Set a minimum height to prevent images from shrinking too much */
+    height: auto; /* Allow height to adjust based on image aspect ratio */
+    overflow: hidden;
+}
+
+.card-image img {
+    width: 100%;   /* Make the image stretch across the container */
+    height: auto;  /* Ensure the image fills the container's height */
+    object-fit: contain; /* Ensure the image keeps its aspect ratio without cropping */
+    display: block;
+    border: none;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-shadow: none;
+    transition: transform 1s ease-out;
+}
+
+.card-image img:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.row.three-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: flex-start; /* Keep images aligned at the top */
+    padding: 0 20px;
+}
+
+/* Apply specific styles to the middle image */
+.card:nth-child(2) {
+    width: 32%;  /* Slightly wider for the middle image */
+}
+
+.card:nth-child(2) .card-image img {
+    object-fit: contain;  /* Let it scale nicely without clipping */
+    height: auto; /* Adjust based on image proportions */
+}
+
+
+
