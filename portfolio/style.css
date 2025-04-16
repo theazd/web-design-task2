@@ -84,6 +84,12 @@ nav {
     margin-bottom: 2rem;
 }
 
+h2 {
+    font-size: 500%;
+    color: #FF9FDF;
+    margin-bottom: 1rem;
+    text-align: center;
+}
 
 
 /********************* GALLERY *********************/
@@ -131,6 +137,20 @@ nav {
     padding: 0 20px;
 }
 
+.row.four-columns {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 40px;
+    padding: 0 20px;
+}
+
+
+.row.four-columns .card {
+    width: 21%;
+}
+
 /* Apply specific styles to the middle image */
 .card:nth-child(2) {
     width: 32%;  /* Slightly wider for the middle image */
@@ -143,3 +163,37 @@ nav {
 
 
 
+
+/********************* CONTACT *********************/
+
+.contact-form {
+    width: 100%;
+    max-width: 500px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-form input,
+  .contact-form textarea,
+  .contact-form button {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    font-size: 16px;
+  }
+  
+  .contact-form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .contact-form button:hover {
+    background: #0056b3;
+  }
